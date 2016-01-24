@@ -1,0 +1,23 @@
+<div flex>
+    <pre col>
+            <code class="html">&lt;ion-navbar&gt;
+  &lt;ion-title&gt;Profile&lt;/ion-title&gt;
+&lt;/ion-navbar&gt;
+
+
+&lt;ion-content&gt;
+  {{first}} {{last}}
+&lt;/ion-content&gt;</code>
+          </pre>
+    <pre col>
+            <code class="javascript">@Page({
+  templateUrl: 'profile.html'
+})
+export class Profile {
+  constructor() {
+    this.first = 'Biff';
+    this.last = 'Tannen';
+  }
+}</code>
+          </pre>
+</div>

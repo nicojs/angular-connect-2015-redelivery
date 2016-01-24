@@ -1,0 +1,74 @@
+.reveal [flex] {
+    display: flex;
+}
+.reveal [col] {
+    flex: 1 1 0;
+    padding-right: 40px;
+    text-align: left;
+}
+
+.reveal [col][demo] {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.reveal .demo-ios {
+    background: rgba(0, 0, 0, 0) url("/img/devices-sprite-transparent.png") no-repeat scroll 0 0 / 455px 1559px;
+    height: 740px;
+    position: relative;
+    top: -60px;
+    width: 460px;
+}
+.reveal .demo-ios iframe {
+    height: 560px;
+    left: 69px;
+    position: absolute;
+    top: 75px;
+    width: 320px;
+}
+.reveal iframe {
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.reveal .demo-md {
+    background: rgba(0, 0, 0, 0) url("/img/devices-sprite-transparent.png") no-repeat scroll 0 -775px / 455px 1559px;
+    height: 780px;
+    position: relative;
+    top: -60px;
+    width: 460px;
+}
+.reveal .demo-md iframe {
+    height: 572px;
+    left: 52px;
+    position: absolute;
+    top: 67px;
+    width: 350px;
+}
+
+.icon-demo button {
+  margin: 0 20px;
+  padding: 10px 30px;
+  font-size: 18px;
+  -webkit-appearance: none;
+  border: 0;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  outline: 0;
+  background: transparent;
+  }
+  .icon-demo button:hover {
+    border-bottom-color: rgba(255, 255, 255, 0.2); }
+  .icon-demo button.active {
+    border-bottom-color: #ddd; }
+
+.icon-demo .icons-preview {
+  margin: 40px auto;
+  width: 820px; }
+  .icon-demo .icons-preview div[flex] {
+    margin: 45px 0; }
+  .icon-demo .icons-preview div[col] {
+    text-align: center;
+    padding: 0; }
+  .icon-demo .icons-preview i {
+    font-size: 72px; }
