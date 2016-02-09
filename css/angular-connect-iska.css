@@ -7,11 +7,52 @@
     text-align: left;
 }
 
+.reveal [basic-process] li{
+    list-style: none;
+}
+
+.reveal [basic-process] li:not([arrow]) {
+    border: 3px solid;
+    border-radius: 10px;
+}
+
+.reveal [basic-process] li[arrow]::after {
+    position: relative;
+    top: 3pt;
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 0.4em;
+    height: 0.4em;
+    border-right: 0.2em solid;
+    border-top: 0.2em solid;
+    transform: rotate(45deg);
+    margin-right: 0.5em;
+}
+
 .reveal [col][demo] {
     align-items: center;
     display: flex;
     flex-direction: column;
 }
+.reveal [theme-red]{
+    background-color: #A80000;
+    color: #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+.reveal [theme-blue]{
+    background-color: #00539F;
+    color: #ddd;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.reveal [theme-blue] h2, .reveal [theme-red] h2, 
+.reveal [theme-blue] h4, .reveal [theme-red] h4{
+    color: #ddd;
+}
+
 .reveal .demo-ios {
     background: rgba(0, 0, 0, 0) url("/img/devices-sprite-transparent.png") no-repeat scroll 0 0 / 455px 1559px;
     height: 740px;
@@ -72,3 +113,13 @@
     padding: 0; }
   .icon-demo .icons-preview i {
     font-size: 72px; }
+
+.reveal .align-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reveal .pad-top-100{
+    padding-top: 100px;
+}
