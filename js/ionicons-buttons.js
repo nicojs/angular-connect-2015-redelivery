@@ -5,12 +5,16 @@
     var icons = document.querySelectorAll('.icons-preview .ion');
 
     iosIcons.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
         iosIcons.classList.add('active');
         androidIcons.classList.remove('active');
         setMode('ios');
     });
 
     androidIcons.addEventListener('click', function (ev) {
+        ev.preventDefault();
+        ev.stopPropagation();
         iosIcons.classList.remove('active');
         androidIcons.classList.add('active');
         setMode('md');
