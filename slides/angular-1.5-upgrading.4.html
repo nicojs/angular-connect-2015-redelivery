@@ -1,0 +1,26 @@
+<h2>ng-forward templates</h2>
+<div flex>
+    <div col>
+        <ul>
+            <li>
+                Angular 2 style bindings
+                <ul>
+                    <li>[auto-generated]</li>
+                    <li>(pseudo)</li>
+                    <li>[(directives)]</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <pre col>
+    <code class="html">&lt;ul class="todo-list"&gt;
+    &lt;li ng-repeat="todo in todoApp.todos"&gt;
+        &lt;todo-view
+            [todo]="todo"
+            (title-change)="todoApp.save(todo)"
+            (complete-change)="todoApp.save(todo)"
+            (remove)="todoApp.remove(todo)"&gt;
+        &lt;/todo-view&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+</div>

@@ -1,0 +1,23 @@
+<h2>Multi slot transclusion</h2>
+
+<p>Map transcluded content to specified slots. <br /> Like shadow dom Content Projection. </p>
+<div flex>
+    <pre col><code class="html">&lt;pane&gt;
+    &lt;pane-title&gt;
+        &lt;a ng-click="..."&gt;a title&lt;/a&gt;
+    &lt;pane-title&gt;
+    &lt;pane-content&gt;
+        The content of the pane
+    &lt;/pane-content&gt;
+&lt;/pane&gt;
+</code></pre>
+    <pre col><code class="javascript">mod.component('pane', {
+    restrict: 'E',
+    transclude: { paneTitle: '?titleSlot',
+                  paneContent: 'contentSlot' },
+    template:
+        '&lt;h1 ng-transclude="titleSlot"&gt;&lt;/h1&gt;' +
+        &lt;div ng-transclude="contentSlot"&gt;&lt;/div&gt;'
+});
+</code></pre>
+</div>

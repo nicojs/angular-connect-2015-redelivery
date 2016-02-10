@@ -123,3 +123,7 @@
 .reveal .pad-top-100{
     padding-top: 100px;
 }
+
+.reveal *:not(pre)>code{
+    background-color: #efefef;
+}
