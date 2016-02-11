@@ -13,4 +13,4 @@ class Nested{ }
 
 * Use Angular 2 like syntax
 * Use TypeScript
-* Still pure angular 1
+* Still pure AngularJS

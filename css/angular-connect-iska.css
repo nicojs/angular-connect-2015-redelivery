@@ -127,3 +127,9 @@
 .reveal *:not(pre)>code{
     background-color: #efefef;
 }
+
+.reveal .sl-block {
+    display: block;
+    position: absolute;
+    z-index: auto;
+}
